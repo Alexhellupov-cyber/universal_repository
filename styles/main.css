@@ -1,0 +1,70 @@
+html{
+    background-color: rgb(69, 73, 77);
+}
+
+header {
+    display: flex;
+    padding: 40px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header a img{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+}
+
+.HeaderMenu ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-left: 40px;
+    
+}
+
+.HeaderMenu ul li a{
+    color: black;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgb(70, 70, 70);
+}
+
+.RightMenuBtn{
+    align-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.RightMenuBtn input{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(71, 73, 72);
+}
+
+.RightMenuBtn .SearchBtn{
+    padding: 10px;
+    background-color: rgb(70,70,70);
+    border-radius: 3px;
+    outline: none;
+    border: none; /* если хочешь убрать рамку */
+    box-shadow: none; /* если обводка — это тень */
+}
+
+.RightMenuBtn .SettingsBtn{
+    padding: 10px;
+    background-color: rgb(70,70,70);
+    border-radius: 3px;
+    outline: none;
+    border: none; /* если хочешь убрать рамку */
+    box-shadow: none; /* если обводка — это тень */
+}
+
+.HeroImg img{
+  background-image: url('whiteback.jpg');
+  background-size: cover;       /* Чтобы картинка заполнила весь блок */
+  background-position: center;  /* Центрирование */
+  background-repeat: no-repeat; /* Без повторения */
+}
