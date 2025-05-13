@@ -5,6 +5,9 @@ html{
 header {
     display: flex;
     padding: 40px;
+  justify-content: center; /* по горизонтали */
+  align-items: center;     /* по вертикали */
+  height: 100px;           /* для примера */
 }
 
 header a{
@@ -12,8 +15,8 @@ header a{
 }
 
 header a img{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     padding: 15px;
 }
 
@@ -42,6 +45,10 @@ header a img{
     padding-left: 20px;
     padding-right: 20px;
     background-color: rgb(71, 73, 72);
+    width: 180px;
+    border: 3px solid rgb(23, 24, 24);
+    border-radius: 20px;
+
 }
 
 .RightMenuBtn .SearchBtn{
@@ -62,9 +69,18 @@ header a img{
     box-shadow: none; /* если обводка — это тень */
 }
 
-.HeroImg img{
-  background-image: url('whiteback.jpg');
-  background-size: cover;       /* Чтобы картинка заполнила весь блок */
-  background-position: center;  /* Центрирование */
-  background-repeat: no-repeat; /* Без повторения */
+.HeroImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 10%; /* ✅ отступы слева и справа */
+  box-sizing: border-box;
+}
+
+.HeroImg img {
+  width: 100%;      /* ✅ займет всю ширину внутри отступов */
+  height: auto;
+  display: block;
 }
